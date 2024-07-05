@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*
+Cynthia Schmidt 0798578
+font-family: "Montserrat", sans-serif;
+font-family: "Source Sans 3", sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    background: #6694a3;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 60px;
+}
+
+header {
+    background-image: url('images/hero.png');
+    height: 520px;
+    background-size: cover;
+    width: 100%;
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0;
+}
+
+header p {
+    font-family: "Source Sans 3", sans-serif;
+    font-style: italic;
+    margin-top: 0;
+    background: #d9ac97;
+    display: inline-block;
+    transform: translateX(50px) translateY(120px);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    background: #d9ac97;
+    display: inline-block;
+    transform: translateX(160px) translateY(120px);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    background: #6694a3;
+    color: #ffff;
+    font-style: italic;
+    padding-left: 100px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+footer img {
+    padding-right: 20px;
+}
+
+footer ul li {
+    font-family: "Source Sans 3", sans-serif;
+    list-style-type: none;
+    line-height: 40px;
+}
+
+p {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+ul li {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ffff;
+}
+
+a:active {
+    text-decoration: none;
+    color: #ffff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #ffff;
+}
+
+#feat-photo {
+    grid-area: one;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#feat-copy {
+    grid-area: two;
+    margin-top: 20px;
+    margin-bottom: 23px;
+    margin-right: 20px;
+    margin-left: 10px;
+    background: #fdeae3;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "one two";
+}
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "one"
+        "two";
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+
+    footer #hands {
+        display: none;
+    }
+
+    footer img {
+        padding: 10px;
+    }
+
+}
